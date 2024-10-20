@@ -606,7 +606,12 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
+    url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -728,6 +733,14 @@ a:active {
 
   .logo {
     width: 5rem;
+    fill: #754e93;
+
+    /* TODO: Adjust the width of the logo on large devices here. */
+  }
+  .logo:hover {
+    width: 5rem;
+    fill: black;
+
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
