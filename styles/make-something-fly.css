@@ -8,7 +8,7 @@
   pointer-events: none !important;
   top: 0;
   left: 0;
-  transform: translateX(0%) translateY(-0%) rotateZ(90);
+  transform: translateX(-320%) translateY(-320%) rotateZ(0);
   position: fixed;
   z-index: 999999;
   width: 5rem;
@@ -32,39 +32,39 @@
 
 @keyframes fly {
   0% {
-    transform: translate(-500%, 110vh) rotateZ(0deg);
+    transform: translate(-500%, 110vh) rotateZ(2turn);
     opacity: 1;
   }
 
   12.5% {
-    transform: translate(120vw, -120%) rotateZ(90deg);
+    transform: translate(120vw, -120%) rotateZ(2turn);
   }
 
   25% {
-    transform: translate(-200%, 50vh) scale(1.75) rotateZ(180deg);
+    transform: translate(-200%, 50vh) scale(1.75) rotateZ(2turn);
   }
 
   37.5% {
-    transform: translate(-200%, -120%) rotateZ(270deg);
+    transform: translate(-200%, -120%) rotateZ(2turn);
   }
 
   50% {
-    transform: translate(100vw, 50vh) rotateZ(0deg);
+    transform: translate(100vw, 50vh) rotateZ(2turn);
     opacity: 0.75;
   }
 
   62.5% {
-    transform: translate(20vw, 100vh) rotateZ(90deg);
+    transform: translate(20vw, 100vh) rotateZ(2turn);
   }
   75% {
-    transform: translate(200%, 100vh) rotateZ(180deg);
+    transform: translate(200%, 100vh) rotateZ(2turn);
   }
   87.5% {
-    transform: translate(50vw, -200%) scale(1.75) rotateZ(270deg);
+    transform: translate(50vw, -200%) scale(1.75) rotateZ(2turn);
   }
 
   100% {
-    transform: translate(-200%, 110vh) rotateZ(0deg);
+    transform: translate(-200%, 110vh) rotateZ(2turn);
     opacity: 1;
   }
 }
