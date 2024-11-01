@@ -8,7 +8,7 @@
   pointer-events: none !important;
   top: 0;
   left: 0;
-  transform: translateX(-320%) translateY(-320%) rotateZ(0);
+  transform: translateX(0%) translateY(-0%) rotateZ(90);
   position: fixed;
   z-index: 999999;
   width: 5rem;
@@ -32,7 +32,7 @@
 
 @keyframes fly {
   0% {
-    transform: translate(-500%, 110vh) rotateZ(0deg);
+    transform: translate(-500%, 110vh) rotateZ(-40deg);
     opacity: 1;
   }
 
