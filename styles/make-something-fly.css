@@ -10,7 +10,6 @@
   left: 0;
   transform: translateX(-320%) translateY(-320%) rotateZ(0);
   position: fixed;
-  animation-delay: 60s;
   z-index: 999999;
   width: 5rem;
 }
@@ -38,15 +37,15 @@
   }
 
   12.5% {
-    transform: translate(120vw, -120%) rotateZ(20deg);
+    transform: translate(120vw, -120%) rotateZ(40deg);
   }
 
   25% {
-    transform: translate(-200%, 50vh) scale(1.75) rotateZ(-20deg);
+    transform: translate(-200%, 50vh) scale(1.75) rotateZ(-40deg);
   }
 
   37.5% {
-    transform: translate(-200%, -120%) rotateZ(-40deg);
+    transform: translate(-200%, -120%) rotateZ(-80deg);
   }
 
   50% {
@@ -55,13 +54,13 @@
   }
 
   62.5% {
-    transform: translate(20vw, 100vh) rotateZ(20deg);
+    transform: translate(20vw, 100vh) rotateZ(40deg);
   }
   75% {
-    transform: translate(200%, 100vh) rotateZ(20deg);
+    transform: translate(200%, 100vh) rotateZ(40deg);
   }
   87.5% {
-    transform: translate(50vw, -200%) scale(1.75) rotateZ(20deg);
+    transform: translate(50vw, -200%) scale(1.75) rotateZ(40deg);
   }
 
   100% {
