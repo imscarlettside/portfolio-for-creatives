@@ -279,7 +279,6 @@ a:active {
 .socials-list {
   display: flex;
   flex-direction: row;
-  background: black;
 }
 .social-item {
   line-height: 1.3;
