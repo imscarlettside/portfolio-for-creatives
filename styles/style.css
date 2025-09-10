@@ -73,33 +73,33 @@ html {
   --body-typeface: "Montserrat", sans-serif;
   --heading-typeface: "Unbounded", serif;
   --project-title-typeface: "Unbounded", serif;
-  --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;
-  --alt-background-color: #000000;
-  --background-color-holding-page: rgba(157, 0, 255, 0.6);
-  --h1-color: #754e93;
-  --h2-color: #754e93;
-  --h3-color: #754e93;
-  --h4-color: #754e93;
-  --h5-color: #754e93;
-  --h6-color: #754e93;
-  --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
-  --accent-color: #754e93;
-  --overlay-color: #754e93;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
-  --hyperlink-color: #754e93;
+  --background-color: #EAEAE;
+  --background-color-about: #EAEAE;
+  --background-color-footer: #EAEAE;
+  --alt-background-color: #3e3845;
+  --background-color-holding-page: #eaeaea;
+  --h1-color: #3e3845;
+  --h2-color: #3e3845;
+  --h3-color: #3e3845;
+  --h4-color: #3e3845;
+  --h5-color: #3e3845;
+  --h6-color: #3e3845;
+  --primary-text-color: #3e3845;
+  --holding-page-title-color: #EAEAE;
+  --accent-color: #3e3845;
+  --overlay-color: #3e3845;
+  --overlay-title-color: #EAEAE;
+  --overlay-description-color: #EAEAE;
+  --hyperlink-color: #3e3845;
   --hyperlink-alternate-color: rgb(247, 0, 255);
-  --hover-color: #111;
-  --visited-color: #754e93;
-  --project-title-color: #754e93;
+  --hover-color: #eaeaea;
+  --visited-color: #3e3845;
+  --project-title-color: #3e3845;
   --project-sidebar-background-color: rgb(230, 90, 255);
-  --project-sidebar-text-color: white;
+  --project-sidebar-text-color: #3e3845;
   --heart-color: darkred;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #754e93;
+  --holding-page-footer-color: #3e3845;
+  --text-selection-background-color: #3e3845;
 
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
@@ -307,11 +307,27 @@ a:active {
 ██   ██ ███████ ██   ██  ██████  
                                  
 */
+.hero-gif {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .hero {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
+  background-color: #eaeaea;
+}
+.hero-header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  color: #eaeaea;
+  background-color: #eaeaea;
+  z-index: 5;
 }
 
 .branding-navigation {
@@ -320,21 +336,25 @@ a:active {
   justify-content: space-between;
   padding: 1rem;
   align-items: flex-start;
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  color: #eaeaea;
 }
 
 .logo {
-  width: 3rem;
+  width: 1rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
 .hero-headline-wrapper {
   display: flex;
   flex-direction: row;
-  flex: 1;
   align-items: flex-end;
   justify-content: left;
-  padding: 2rem 4rem;
   text-align: left;
+  height: 20rem;
+  background-color: #eaeaea;
 }
 
 .hero-icon {
@@ -346,6 +366,7 @@ a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  color: #eaeaea;
 }
 
 .hero-footer-navigation {
@@ -353,6 +374,7 @@ a:active {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
+  background-color: #eaeaea;
 }
 
 /* Work Page Layout
@@ -373,12 +395,13 @@ a:active {
 .portfolio,
 .project-wrapper {
   padding: 0.25rem;
+  background-color: #eaeaea;
 }
 
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
@@ -466,6 +489,7 @@ a:active {
   grid-gap: 3rem;
   min-height: 100vh;
   background: var(--background-color-footer);
+  background-color: #eaeaea;
   padding: 1rem;
 }
 
@@ -668,13 +692,13 @@ a:active {
   }
 
   .logo {
-    width: 5rem;
+    width: 2rem;
     fill: #754e93;
 
     /* TODO: Adjust the width of the logo on large devices here. */
   }
   .logo:hover {
-    width: 5rem;
+    width: 2rem;
     fill: black;
 
     /* TODO: Adjust the width of the logo on large devices here. */
@@ -686,11 +710,6 @@ a:active {
 
   .hero-headline-wrapper {
     padding: 4rem 8rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -795,7 +814,7 @@ a:active {
   /* TODO: Add styles here for X-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -805,6 +824,6 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
