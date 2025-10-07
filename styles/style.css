@@ -331,6 +331,7 @@ a:active {
   flex-direction: column;
   background-color: #eaeaea;
 }
+
 .hero-header {
   position: sticky;
   top: 0;
@@ -348,6 +349,15 @@ a:active {
   vertical-align: middle;
   position: sticky;
   color: #eaeaea;
+}
+
+.custom-navigation {
+  width: 20%;
+  background-color: red;
+}
+
+.custom-navigation:last-child {
+  text-align: right;
 }
 
 .logo {
@@ -682,29 +692,15 @@ a:active {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-  /* TODO: Add or adjust styles here for large devices. */
+  /* TODO: Add or adjust styles here for large devices. includes typography 
 
-  .holding-page-title {
-    font-size: ;
-  }
 
-  h1 {
-    font-size: ;
-  }
-
-  h2 {
-    font-size: ;
-  }
-
-  h3 {
-    font-size: ;
-  }
 
   .logo {
-    /* TODO: Adjust the width of the logo on large devices here. */
+    TODO: Adjust the width of the logo on large devices here. 
   }
   .logo:hover {
-    /* TODO: Adjust the width of the logo on large devices here. */
+    TODO: Adjust the width of the logo on large devices here. 
   }
 
   .hero {
@@ -712,7 +708,7 @@ a:active {
 
   .hero-headline-wrapper {
   }
-
+*/
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a.grayscale img {
     filter: grayscale(100);
