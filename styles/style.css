@@ -351,12 +351,12 @@ a:active {
   color: #eaeaea;
 }
 
-.custom-navigation {
+.navigation-item {
   width: 20%;
   background-color: red;
 }
 
-.custom-navigation:last-child {
+.navigation-item:last-child {
   text-align: right;
 }
 
