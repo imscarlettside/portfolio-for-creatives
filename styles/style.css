@@ -76,7 +76,7 @@ html {
   --background-color-about: #EAEAE;
   --background-color-footer: #EAEAE;
   --alt-background-color: #2e2a33;
-  --background-color-holding-page: #e5e8e6;
+  --background-color-holding-page: #f0f0f0;
   --h1-color: #7700ff;
   --h2-color: #ff0000;
   --h3-color: #00ff04;
@@ -167,10 +167,10 @@ h3 {
 }
 
 h4 {
-  font-size: 0.9rem;
-  line-height: 0;
+  font-size: 3rem;
+  line-height: 1.5;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 h5 {
@@ -317,6 +317,7 @@ a:active {
 .hero-gif {
   margin-left: 0;
   margin-right: 0;
+
   max-width: 100%;
   height: auto;
   display: block;
@@ -326,15 +327,15 @@ a:active {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 .hero-header {
   position: sticky;
   top: 0;
   padding: 20px 27px;
-  color: #e5e8e6;
-  background-color: #e5e8e6;
+  color: #f0f0f0;
+  background-color: #f0f0f0;
   z-index: 5;
 }
 
@@ -345,7 +346,7 @@ a:active {
   align-items: center;
   vertical-align: middle;
   position: sticky;
-  color: #e5e8e6;
+  color: #f0f0f0;
 }
 
 .navigation-item {
@@ -368,7 +369,7 @@ a:active {
   justify-content: left;
   text-align: left;
   height: 20rem;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 .hero-footer {
@@ -385,7 +386,7 @@ a:active {
   justify-content: space-between;
   padding: 25px 27px;
   line-height: 0.5;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 /* Work Page Layout
@@ -400,14 +401,14 @@ a:active {
 
 .work-wrapper {
   flex: 1;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
   padding: 0.25rem;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 /* Defining the work page grid */
@@ -422,8 +423,10 @@ a:active {
   position: relative;
   margin: 10px;
   margin-bottom: 0px;
+}
 
-  /* Required to contain overlay size */
+.thumbnail {
+  border: 2px solid #2e2a33;
 }
 
 .project-description {
@@ -450,7 +453,7 @@ a:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  border: 2px solid #2e2a33;
   transition: opacity 0.3s, visibility 0.3s;
   width: 100%;
   height: fit-content;
@@ -476,17 +479,59 @@ a:active {
                                            
 */
 
-.about {
+.about-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  background: var(--background-color-about);
+  background: #f0f0f0;
   padding: 1rem;
   flex: 1;
 }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-rows: 2;
+  gap: 10px;
+}
+
+.grid-1 {
+  grid-row: 1 / span 2;
+  background-color: #ffff00;
+}
+
+grid-2 {
+  grid-row: 1;
+  grid-column: 2;
+  background-color: #ffff00;
+}
+
+grid-3 {
+  grid-row: 1;
+  grid-column: 3;
+  background-color: #ffff00;
+}
+
+grid-4 {
+  grid-row: 2;
+  grid-column: 2 / span 2;
+  background-color: #ffff00;
+}
+
 .portrait {
   width: 100%;
 }
+
+.absolute {
+  position: absolute;
+  padding-top: 2rem;
+}
+
+.A {
+  text-indent: calc(15% + 0.5rem);
+}
+
+/* needed?
 .about-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -501,7 +546,7 @@ a:active {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
 }
-
+/*
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -517,7 +562,7 @@ a:active {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 10vh;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 
   padding: 27px;
   padding-top: 80px;
@@ -547,11 +592,11 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 .project-wrapper-full-width {
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 /* Sidebar */
 .project-aside {
@@ -594,36 +639,37 @@ a:active {
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
-  color: #00fff7;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 .project-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
-  background-color: #e5e8e6;
-}
-
-.project-grid-flex {
-  display: flex;
-  column-gap: 10px;
-  width: 100%;
-  align-items: stretch;
+  background-color: #f0f0f0;
 }
 
 .project-icon-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 10px;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
   padding-bottom: 10px;
+}
+
+.project-grid-flex {
+  display: flex;
+  column-gap: 1 rem;
+  width: 100%;
+  align-items: stretch;
+  max-width: 100%;
+  background-color: #1e00ff;
 }
 
 .grid-item {
@@ -650,7 +696,7 @@ a:active {
 .project-description-container {
   display: flex;
   flex-direction: row;
-  background-color: #e5e8e6;
+  background-color: #f0f0f0;
 }
 
 .project-title-col-2 {
@@ -660,7 +706,7 @@ a:active {
 
 .project-description-col-2 {
   padding-bottom: 1rem;
-  min-width: 50%;
+  min-width: 10 rem;
 }
 
 .project-full-width {
@@ -807,6 +853,10 @@ a:active {
     padding-bottom: 0px;
     min-height: 0vh;
     margin-bottom: 0rem;
+  }
+
+  .project-description-container {
+    flex-direction: column;
   }
 
   .grid {
