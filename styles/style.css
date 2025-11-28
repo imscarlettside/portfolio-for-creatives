@@ -111,12 +111,13 @@ body {
   flex-direction: column;
   min-height: 100vh;
   line-height: 1.2;
+  letter-spacing: 0.03rem;
 }
 
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
 
 ::selection {
-  background: var(--accent-color);
+  background: #bfb7c7;
 }
 
 /* Make all images responsive */
@@ -161,12 +162,13 @@ h2 {
   line-height: 1.3;
   font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 0.03rem;
 }
 
 h3 {
   font-size: 0.9rem;
   line-height: 1.3;
-
+  letter-spacing: 0.03rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -199,7 +201,9 @@ em {
 }
 
 .fineprint {
-  font-size: 0.875rem;
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: 250;
 }
 
 .hero-headline {
@@ -352,11 +356,11 @@ a:active {
   align-items: center;
   vertical-align: middle;
   position: sticky;
-  color: #f0f0f0;
+  color: #2e2a33;
 }
 
 .navigation-item {
-  width: 20%;
+  width: 10%;
 }
 
 .navigation-item:last-child {
@@ -694,7 +698,7 @@ a:active {
 .project-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 2rem;
   background-color: #f0f0f0;
 }
 
@@ -710,21 +714,14 @@ a:active {
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  background-color: #1e00ff;
-}
-.wide {
-  border: 10px solid red;
-}
-.narrow {
-  border: 10px solid red;
+  gap: 2rem;
 }
 
 .grid-item {
   flex: 1;
   height: auto;
   object-fit: contain;
-  max-height: 400px;
+  max-height: 4000px;
   width: auto;
 }
 
@@ -784,6 +781,21 @@ a:active {
   background: none;
   aspect-ratio: 16/9;
   overflow: hidden;
+}
+
+.project-footer {
+  padding: 0rem 2rem;
+  color: #2e2a33;
+  background-color: #f0f0f0;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  vertical-align: baseline;
+  color: #2e2a33;
 }
 
 /*
