@@ -940,7 +940,7 @@ a:active {
     transform: rotate(-90deg);
   }
   .project-full-width {
-    padding: 0px 27px;
+    padding: 0px 15px;
   }
 
   .about-portrait {
@@ -949,6 +949,14 @@ a:active {
 
   .about-hero {
     flex-direction: column-reverse;
+  }
+
+  .project-intro {
+    margin: 15px;
+  }
+
+  .hero-header {
+    padding: 20px 15px;
   }
 }
 
@@ -960,11 +968,11 @@ a:active {
   }
 
   h2 {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   h3 {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   h4 {
@@ -973,7 +981,7 @@ a:active {
 
   body,
   p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 1.2;
     padding-bottom: 0px;
     min-height: 0vh;
@@ -997,20 +1005,6 @@ a:active {
     grid-template-rows: auto;
   }
 
-  .footer-item-1 {
-    line-height: 0.5;
-    height: auto;
-  }
-
-  .footer-item-2 {
-    line-height: 0.5;
-    height: auto;
-  }
-  .footer-item-3 {
-    line-height: 0.5;
-    height: fit-content;
-  }
-
   .absolute {
     top: 0.85rem;
   }
@@ -1030,10 +1024,17 @@ a:active {
   .bio-paragraph {
     text-indent: calc(45% + 0.5rem);
   }
-}
 
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 0.9rem;
+  .project-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    padding: 0rem 5rem;
+  }
+
+  .project-icon-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
   }
 }
