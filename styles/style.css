@@ -28,21 +28,6 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 @import url("scroll-to-top.css");
 
-/*
-
-X-Small devices (portrait phones, less than 576px) 
-No media query for `xs` since this is the default in Bootstrap 
-
-███    ███  ██████  ██████  ██ ██      ███████     ███████ ██ ██████  ███████ ████████ 
-████  ████ ██    ██ ██   ██ ██ ██      ██          ██      ██ ██   ██ ██         ██    
-██ ████ ██ ██    ██ ██████  ██ ██      █████       █████   ██ ██████  ███████    ██    
-██  ██  ██ ██    ██ ██   ██ ██ ██      ██          ██      ██ ██   ██      ██    ██    
-██      ██  ██████  ██████  ██ ███████ ███████     ██      ██ ██   ██ ███████    ██    
-                                                                                       
-*/
-
-/* Add Border Box and Smooth Scroll */
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -77,26 +62,15 @@ html {
   --background-color-footer: #f0f0f0;
   --alt-background-color: #2e2a33;
   --background-color-holding-page: #f0f0f0;
-  --h1-color: #7700ff;
-  --h2-color: #ff0000;
-  --h3-color: #00ff04;
-  --h4-color: #ff00bf;
-  --h5-color: #00fff7;
-  --h6-color: #ffae00;
-  --primary-text-color: #1e00ff;
   --holding-page-title-color: #f0f0f0;
   --accent-color: #2e2a33;
   --overlay-color: #2e2a33;
   --overlay-title-color: #f0f0f0;
   --overlay-description-color: #f0f0f0;
   --hyperlink-color: #2e2a33;
-  --hyperlink-alternate-color: rgb(247, 0, 255);
   --hover-color: #2e2a33;
   --visited-color: #2e2a33;
   --project-title-color: #2e2a33;
-  --project-sidebar-background-color: rgb(230, 90, 255);
-  --project-sidebar-text-color: #ffff00;
-  --heart-color: darkred;
   --holding-page-footer-color: #2e2a33;
   --text-selection-background-color: #2e2a33;
 
@@ -114,29 +88,17 @@ body {
   letter-spacing: 0.03rem;
 }
 
-/* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
-
 ::selection {
   background: #bfb7c7;
 }
 
-/* Make all images responsive */
 img,
 svg {
   max-width: 100%;
   height: auto;
   vertical-align: top;
-  /* Removes the gap/space in inline elements for text descenders. */
-  /*
-  object-fit: cover;
-   This is optional. Also try cover or leave out entirely. */
 }
 /* Global & Mobile Typography 
-ul li {
-  margin-bottom: 1rem;
-}
-
-
 
 ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
    ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██  
@@ -328,7 +290,6 @@ a:active {
 .hero-gif {
   margin-left: 0;
   margin-right: 0;
-
   max-width: 100%;
   height: auto;
   display: block;
@@ -370,7 +331,6 @@ a:active {
 
 .logo {
   width: 1.3rem;
-  /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
 .hero-headline-wrapper {
@@ -839,12 +799,16 @@ a:active {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 80vh;
 }
 
 .gif {
   padding-top: 10rem;
   padding-top: 5rem;
   width: 15rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 /*
@@ -939,14 +903,13 @@ a:active {
   }
 
   .navigation-item {
-    width: 10%;
+    width: 20%;
   }
 
   .about-footer-navigation {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    vertical-align: AUTO;
     row-gap: 10px;
   }
   .scark-footer {
@@ -960,7 +923,6 @@ a:active {
   .scark-div {
     width: 100%;
     justify-content: flex-start;
-    vertical-align: AUTO;
   }
 }
 
