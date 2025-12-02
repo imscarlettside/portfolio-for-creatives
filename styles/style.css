@@ -83,7 +83,6 @@ body {
   background: var(--background-color);
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   line-height: 1.2;
   letter-spacing: 0.03rem;
 }
@@ -688,16 +687,17 @@ a:active {
 .project-grid-flex {
   display: flex;
   flex-direction: row;
-
   width: 100%;
   gap: 1rem;
+  border: 2px solid green;
+  min-height: 20rem;
 }
 
 .grid-item {
   flex: 1;
   height: auto;
   object-fit: contain;
-  max-height: 4000px;
+
   width: auto;
 }
 
@@ -786,6 +786,14 @@ a:active {
   vertical-align: baseline;
 }
 
+.wide {
+  border: 2px solid red;
+}
+
+.narrow {
+  border: 2px solid rgb(0, 166, 255);
+}
+
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -844,15 +852,6 @@ a:active {
     flex-direction: column;
   }
 
-  body,
-  p {
-    font-size: 0.8rem;
-    line-height: 1.2;
-    padding-bottom: 0px;
-    min-height: 0vh;
-    margin-bottom: 0rem;
-  }
-
   .about-grid {
     display: flex;
     flex-direction: column;
@@ -877,8 +876,8 @@ a:active {
   .project-grid-flex {
     gap: 0rem;
     flex-direction: column;
-    margin: 0cm;
-    padding: 0cm;
+    margin: 0;
+    padding: 0;
   }
 
   .pointer-arrow {
