@@ -877,6 +877,8 @@ a:active {
   .project-grid-flex {
     gap: 0rem;
     flex-direction: column;
+    margin: 0cm;
+    padding: 0cm;
   }
 
   .pointer-arrow {
