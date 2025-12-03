@@ -688,17 +688,15 @@ a:active {
   display: flex;
   flex-direction: row;
   width: 100%;
+  align-items: center; /* james added */
+  justify-content: center; /* james added */
   gap: 1rem;
-  border: 2px solid green;
-  min-height: 20rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
 }
 
 .grid-item {
-  flex: 1;
-  height: auto;
-  object-fit: contain;
-
-  width: auto;
+  /* flex: 1; james removed this, it is to dangerous at a global site level */
 }
 
 .text-section {
@@ -787,11 +785,11 @@ a:active {
 }
 
 .wide {
-  border: 2px solid red;
+  width: 60%;
 }
 
 .narrow {
-  border: 2px solid rgb(0, 166, 255);
+  width: 40%;
 }
 
 /*
@@ -874,12 +872,16 @@ a:active {
   }
 
   .project-grid-flex {
-    gap: 0rem;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
   }
 
+  .wide {
+    width: 100%;
+  }
+
+  .narrow {
+    width: 100%;
+  }
   .pointer-arrow {
     transform: rotate(-90deg);
   }
@@ -944,15 +946,6 @@ a:active {
 
   h4 {
     font-size: 1.5rem;
-  }
-
-  body,
-  p {
-    font-size: 0.8rem;
-    line-height: 1.2;
-    padding-bottom: 0px;
-    min-height: 0vh;
-    margin-bottom: 0rem;
   }
 
   .project-description-container {
