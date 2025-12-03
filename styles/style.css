@@ -690,14 +690,16 @@ a:active {
   width: 100%;
   gap: 1rem;
   min-height: 20rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.grid-item {
-  flex: 1;
-  height: auto;
-  object-fit: contain;
+.wide {
+  width: 60%;
+}
 
-  width: auto;
+.narrow {
+  width: 40%;
 }
 
 .text-section {
@@ -916,6 +918,14 @@ a:active {
     width: 100%;
     justify-content: flex-start;
   }
+
+  .wide {
+    width: 100%;
+  }
+
+  .narrow {
+    width: 100%;
+  }
 }
 
 /* Mobile */
@@ -935,15 +945,6 @@ a:active {
 
   h4 {
     font-size: 1.5rem;
-  }
-
-  body,
-  p {
-    font-size: 0.8rem;
-    line-height: 1.2;
-    padding-bottom: 0px;
-    min-height: 0vh;
-    margin-bottom: 0rem;
   }
 
   .project-description-container {
