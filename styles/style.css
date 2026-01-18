@@ -424,7 +424,9 @@ a:active {
   align-items: center;
   flex-direction: column;
   border: 2px solid #2e2a33;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
   width: 100%;
   height: fit-content;
 
@@ -439,6 +441,14 @@ a:active {
 .Project-thumbnail {
   height: 400px;
   overflow: hidden;
+}
+
+.project-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  margin-bottom: 1rem;
 }
 
 /* 
