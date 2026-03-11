@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Scarlett Side's Portfolio</title>
+    <meta
+      name="description"
+      content="Scarlett is a Vancouver based freelance graphic designer and art director. She seeks to create visually impactful brands that make an emotional connection"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="images/svg+xml"
+      href="assets/branding-images/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/branding-images/favicon.png"
+    />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/26123f775c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main class="work-wrapper">
+      <section class="portfolio">
+        <ul class="grid">
+          <li class="work-page-grid-item">
+            <figure>
+              <img
+                class="thumbnail"
+                src="assets/Mugyue/mugyue-Thumbnail.png"
+                alt="Mugyue Project Thumbnail"
+                width="1855"
+                height="1158"
+              />
+            </figure>
+            <a href="Mugyue.html">
+              <div class="overlay">
+                <figure>
+                  <h1>Overlay here</h1>
+                </figure>
+              </div>
+            </a>
+            <div class="project-description">
+              <h3 class="project-title">Múgyuè Music Festival</h3>
+              <h3 class="project-bio">
+                Branding /// Iconography /// Wayfinding
+              </h3>
+            </div>
+          </li>
+          <li class="work-page-grid-item">
+            <figure>
+              <img
+                class="thumbnail"
+                src="assets/Mugyue/mugyue-Thumbnail.png"
+                alt="Mugyue Project Thumbnail"
+                width="1855"
+                height="1158"
+              />
+            </figure>
+            <a href="Mugyue.html">
+              <div class="overlay">
+                <figure>
+                  <h1>Overlay here</h1>
+                </figure>
+              </div>
+            </a>
+            <div class="project-description">
+              <h3 class="project-title">Múgyuè Music Festival</h3>
+              <h3 class="project-bio">
+                Branding /// Iconography /// Wayfinding
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div id="myID" class="bottomMenu hide">
+      <a href="#"></a>
+    </div>
+    <script src="js/logo-animation.js" crossorigin="anonymous"></script>
+    <script>
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
+  </body>
+</html>
