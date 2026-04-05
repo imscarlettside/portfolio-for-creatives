@@ -796,6 +796,16 @@ a:active {
   vertical-align: baseline;
 }
 
+.project-image:hover .overlay {
+  visibility: visible;
+  opacity: 100%;
+}
+
+.Project-thumbnail {
+  height: 400px;
+  overflow: hidden;
+}
+
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
